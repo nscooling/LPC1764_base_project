@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3609570497</fileChecksum>
+  <configuration>
+    <name>Debug FLASH</name>
+    <outputs>
+      <file>$PROJ_DIR$\low_level_init.c</file>
+      <file>$PROJ_DIR$\cstartup_M.s</file>
+      <file>$PROJ_DIR$\..\main.c</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\cstartup_M.o</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\low_level_init.pbi</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\LPC1764_Base_Project.pbd</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\low_level_init.o</file>
+      <file>$PROJ_DIR$\Debug FLASH\Exe\c.out</file>
+      <file>$PROJ_DIR$\Debug FLASH\Obj\main.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\low_level_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 8</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Debug SRAM</name>
+    <outputs>
+      <file>$PROJ_DIR$\low_level_init.c</file>
+      <file>$PROJ_DIR$\cstartup_M.s</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\NXP\iolpc1764.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+      <file>$PROJ_DIR$\serial.c</file>
+      <file>$PROJ_DIR$\timer.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\nvic.c</file>
+      <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+      <file>$PROJ_DIR$\timer.h</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+      <file>$PROJ_DIR$\serial.h</file>
+      <file>$PROJ_DIR$\LPC17xx_gpio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+      <file>$PROJ_DIR$\leds.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\nvic.h</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\low_level_init.pbi</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\serial.o</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\serial.pbi</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\cstartup_M.o</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\low_level_init.o</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\nvic.pbi</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\LPC1764_Base_Project.pbd</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\timer.pbi</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\timer.o</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\main.o</file>
+      <file>$PROJ_DIR$\config\LPC1764_Ram.icf</file>
+      <file>$PROJ_DIR$\Debug SRAM\Exe\c.out</file>
+      <file>$PROJ_DIR$\Debug SRAM\Obj\nvic.o</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\low_level_init.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 2 7 6 10 4 5 3 9</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8 2 7 6 10 4 11 5 3 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\cstartup_M.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 42</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\serial.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 32</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 8 2</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 21 8 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 39</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28 6 26 10 4 5 3 9 23 27 8 2 25 7 17 24 29 22</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28 6 26 10 4 11 5 3 9 23 27 8 2 25 7 17 24 29 22</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24 22 7 6 10 4 5 3 9 17 21</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 24 22 7 6 10 4 11 5 3 9 17 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\nvic.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28 6 26 10 4 5 3 9 23 27 8 2 25 7 29</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 28 6 26 10 4 11 5 3 9 23 27 8 2 25 7 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug SRAM\Obj\LPC1764_Base_Project.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 30 37 35 32 38</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug SRAM\Exe\c.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 41 33 34 40 43 31 39 16 19 18 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

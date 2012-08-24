@@ -1,0 +1,22 @@
+*** Creating Trace Output File 'LPC1764_Base_Project.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_lpc17xx.o"'
+### List of Objects: adding '"system_lpc17xx.o"'
+### List of Objects: adding '"main.o"'
+### List of Objects: adding '"serial.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "startup_lpc17xx.o" "system_lpc17xx.o" "main.o" "serial.o" --strict --scatter "LPC1764_Base_Project.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LPC1764_Base_Project.map" -o "LPC1764_Base_Project.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'LPC1764_Base_Project.axf'
+### ADS-LD Command File: 'LPC1764_Base_Project.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'LPC1764_Base_Project.lnp', Handle=0x000003A0
+### Writing '.lnp' file
+### ADS-LD Command file 'LPC1764_Base_Project.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

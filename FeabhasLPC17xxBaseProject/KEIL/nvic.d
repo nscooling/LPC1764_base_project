@@ -1,0 +1,1 @@
+nvic.o: ..\nvic.c
