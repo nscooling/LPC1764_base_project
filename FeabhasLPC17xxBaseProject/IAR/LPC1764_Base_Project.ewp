@@ -147,7 +147,7 @@
         </option>
         <option>
           <name>OGUseCmsis</name>
-          <state>0</state>
+          <state>1</state>
         </option>
         <option>
           <name>OGUseCmsisDspLib</name>
@@ -298,6 +298,9 @@
         <option>
           <name>CCIncludePath2</name>
           <state>..\</state>
+          <state>$PROJ_DIR$\..\CMSIS\Include\</state>
+          <state>$PROJ_DIR$\..\LPC17xx\Include\</state>
+          <state>..\CMSIS\Include</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -572,7 +575,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>c.srec</state>
+          <state>LPC1764_Base_Project.srec</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -1835,18 +1838,24 @@
     </settings>
   </configuration>
   <group>
-    <name>bsp</name>
+    <name>CMSIS</name>
     <file>
-      <name>$PROJ_DIR$\cstartup_M.s</name>
+      <name>$PROJ_DIR$\..\LPC17xx\Source\IAR\startup_LPC17xx.s</name>
     </file>
     <file>
-      <name>$PROJ_DIR$\low_level_init.c</name>
+      <name>$PROJ_DIR$\..\LPC17xx\Source\system_LPC17xx.c</name>
     </file>
   </group>
   <group>
     <name>src</name>
     <file>
       <name>$PROJ_DIR$\..\main.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\serial.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\timer.c</name>
     </file>
   </group>
 </project>

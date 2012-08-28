@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\obj\startup_armcm3.o" ".\obj\system_armcm3.o" ".\obj\rtx_conf_cm.o" C:\Users\niall.cooling\Documents\CMSIS-RTOS\RTX\LIB\ARM\RTX_CM3.lib ".\obj\retarget.o" ".\obj\serial.o" ".\obj\main.o" C:\Keil\ARM\RV31\Lib\RTX_CM3.LIB --strict --scatter ".\obj\Example1.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\Example1.map" -o ".\obj\Example1.axf"

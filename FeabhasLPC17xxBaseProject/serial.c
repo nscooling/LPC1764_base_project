@@ -1,5 +1,4 @@
 #include "serial.h"
-//#include <nxp/iolpc1764.h>
 #include <stdint.h>
 
 /* UART Fractional Divider Register */
@@ -20,13 +19,15 @@ volatile uint8_t * const pU0TER = (uint8_t *) 0x4000C030;
 volatile uint8_t * const pU0FDR = (uint8_t *) 0x4000C028;
 volatile UARTfdr_bits * const pU0FDR_bit = (UARTfdr_bits *) 0x4000C028;
 
+volatile uint32_t * const pPINSEL0 = (uint32_t *)0x4002C000;
+
 
 void init_serial0 (void)
 {
   *pU0TER = 0;
   /* 1. Pin Function Select Register 0 already set 
   (in low_level_init.c) */
-//  PINSEL0 = 0x50; // UART0 Rx Tx
+  *pPINSEL0 = 0x50; // UART0 Rx Tx
   
   /* 2. LCR: 8 bits, no parity, 1 stop bit */
   *pU0LCR = 0x03;

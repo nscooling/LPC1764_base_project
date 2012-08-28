@@ -4,16 +4,8 @@
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
 C:\Users\niall.cooling\Documents\FeabhasCortexTarget\FeabhasLPC17xxBaseProject\KEIL\LPC1764_Base_Project.uvproj
-Project File Date:  08/24/2012
+Project File Date:  08/28/2012
 
 <h2>Output:</h2>
-Rebuild target 'Target 1'
-assembling startup_LPC17xx.s...
-compiling system_LPC17xx.c...
-compiling main.c...
-compiling serial.c...
-linking...
-Program Size: Code=1596 RO-data=236 RW-data=4 ZI-data=612  
-"LPC1764_Base_Project.axf" - 0 Error(s), 0 Warning(s).
 Clean started: Project: 'LPC1764_Base_Project'
    deleting intermediate output files for target 'Target 1'

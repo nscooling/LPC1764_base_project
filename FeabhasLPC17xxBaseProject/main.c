@@ -4,10 +4,19 @@
 #include "serial.h"
 
 /************************** PRIVATE VARIABLES *************************/
-//static const char* menu1 = "Hello from Feabhas  \n\r";
+static const char* menu1 = "Hello from Feabhas  \n\r";
 //static const char* menu2 = "Goodbye from Feabhas  \n\r";
 
 static void delay(void);
+void LEDstripe(void);
+void LEDStripeAlt(void);
+
+void ISRcallback(uint32_t count)
+{
+/* Toggle onboard LED D5 */
+  FIO3PINr ^= LED_D5_MASK;
+  //LPC_GPIO3->FIOPIN ^= LED_D5_MASK; // CMSIS Version
+}
 
 int main(void)
 {
@@ -19,72 +28,14 @@ int main(void)
   // Init off-board LEDs direction to output
   FIO1DIRr |= LED_D11_MASK | LED_D21_MASK | LED_D31_MASK | LED_D41_MASK;
   
-//  init_serial0();
-//  putstring0(menu1);
+  init_serial0();
+  putstring0(menu1);
 
-//  Timer0Init();
+  Timer0Init(&ISRcallback);
 
   while(1)
   {
-      // Toggle D5-D8   
-      FIO3PINr ^= LED_D5_MASK;
-      delay();
-      FIO3PINr ^= LED_D6_MASK;
-      delay();
-      FIO4PINr ^= LED_D7_MASK;
-      delay();
-      FIO4PINr ^= LED_D8_MASK;
-      delay();
-      // Toggle D11, D21, D31, D41
-      FIO1PINr ^= LED_D11_MASK;
-      delay();
-      FIO1PINr ^= LED_D21_MASK;
-      delay();
-      FIO1PINr ^= LED_D31_MASK;
-      delay();
-      FIO1PINr ^= LED_D41_MASK;
-      delay();
-
-    
-       // alternative
-//      // turn all 4 onboard leds on
-//      FIO3SETr = LED_D5_MASK;
-//      delay();
-//      FIO3SETr = LED_D6_MASK;
-//      delay();
-//      FIO4SETr = LED_D7_MASK;
-//      delay();
-//      FIO4SETr = LED_D8_MASK;
-//      delay();
-//      // turn all 4 baseboard leds on
-//      FIO1SETr = LED_D11_MASK;
-//      delay();
-//      FIO1SETr = LED_D21_MASK;
-//      delay();
-//      FIO1SETr = LED_D31_MASK;
-//      delay();
-//      FIO1SETr = LED_D41_MASK;
-//      delay();
-//      
-//      // turn all 4 onboard leds off
-//      FIO3CLRr = LED_D5_MASK;
-//      delay();
-//      FIO3CLRr = LED_D6_MASK;
-//      delay();
-//      FIO4CLRr = LED_D7_MASK;
-//      delay();
-//      FIO4CLRr = LED_D8_MASK;
-//      delay();
-//      // turn all 4 baseboard leds off
-//      FIO1CLRr = LED_D11_MASK;
-//      delay();
-//      FIO1CLRr = LED_D21_MASK;
-//      delay();
-//      FIO1CLRr = LED_D31_MASK;
-//      delay();
-//      FIO1CLRr = LED_D41_MASK;
-//      delay();      
-
+//    LEDstripe();
 //       ch = getchar0();
 //       putchar0(ch);
 //       if(ch == '#') break;  
@@ -104,9 +55,75 @@ int main(void)
  *************************************************************************/
 void delay(void)
 {
-	volatile int i;
+  volatile int i;
   for(i = 0; i < 750000; i++)
   {
     // do nothing
   }
 }
+
+
+void LEDstripe(void)
+{
+  // Toggle D5-D8   
+  FIO3PINr ^= LED_D5_MASK;
+  delay();
+  FIO3PINr ^= LED_D6_MASK;
+  delay();
+  FIO4PINr ^= LED_D7_MASK;
+  delay();
+  FIO4PINr ^= LED_D8_MASK;
+  delay();
+  // Toggle D11, D21, D31, D41
+  FIO1PINr ^= LED_D11_MASK;
+  delay();
+  FIO1PINr ^= LED_D21_MASK;
+  delay();
+  FIO1PINr ^= LED_D31_MASK;
+  delay();
+  FIO1PINr ^= LED_D41_MASK;
+  delay();
+}
+
+void LEDStripeAlt(void)
+{
+  // alternative
+  // turn all 4 onboard leds on
+  FIO3SETr = LED_D5_MASK;
+  delay();
+  FIO3SETr = LED_D6_MASK;
+  delay();
+  FIO4SETr = LED_D7_MASK;
+  delay();
+  FIO4SETr = LED_D8_MASK;
+  delay();
+  // turn all 4 baseboard leds on
+  FIO1SETr = LED_D11_MASK;
+  delay();
+  FIO1SETr = LED_D21_MASK;
+  delay();
+  FIO1SETr = LED_D31_MASK;
+  delay();
+  FIO1SETr = LED_D41_MASK;
+  delay();
+      
+  // turn all 4 onboard leds off
+  FIO3CLRr = LED_D5_MASK;
+  delay();
+  FIO3CLRr = LED_D6_MASK;
+  delay();
+  FIO4CLRr = LED_D7_MASK;
+  delay();
+  FIO4CLRr = LED_D8_MASK;
+  delay();
+  // turn all 4 baseboard leds off
+  FIO1CLRr = LED_D11_MASK;
+  delay();
+  FIO1CLRr = LED_D21_MASK;
+  delay();
+  FIO1CLRr = LED_D31_MASK;
+  delay();
+  FIO1CLRr = LED_D41_MASK;
+  delay();
+}
+

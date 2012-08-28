@@ -2,98 +2,49 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3609570497</fileChecksum>
+  <fileChecksum>3273740646</fileChecksum>
   <configuration>
     <name>Debug FLASH</name>
     <outputs>
-      <file>$PROJ_DIR$\low_level_init.c</file>
-      <file>$PROJ_DIR$\cstartup_M.s</file>
+      <file>$PROJ_DIR$\..\LPC17xx\Source\system_LPC17xx.c</file>
+      <file>$PROJ_DIR$\..\LPC17xx\Source\IAR\startup_LPC17xx.s</file>
+      <file>$PROJ_DIR$\..\serial.c</file>
       <file>$PROJ_DIR$\..\main.c</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\cstartup_M.o</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\low_level_init.pbi</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\LPC1764_Base_Project.pbd</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\main.pbi</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\low_level_init.o</file>
-      <file>$PROJ_DIR$\Debug FLASH\Exe\c.out</file>
-      <file>$PROJ_DIR$\Debug FLASH\Obj\main.o</file>
+      <file>$PROJ_DIR$\..\timer.c</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\low_level_init.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 4</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 7</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\cstartup_M.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 3</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 9</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>[ROOT_NODE]</name>
-      <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 8</file>
-        </tool>
-      </outputs>
-    </file>
   </configuration>
   <configuration>
     <name>Debug SRAM</name>
     <outputs>
       <file>$PROJ_DIR$\low_level_init.c</file>
       <file>$PROJ_DIR$\cstartup_M.s</file>
-      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
       <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\io_macros.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
       <file>$TOOLKIT_DIR$\inc\NXP\iolpc1764.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
       <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-      <file>$PROJ_DIR$\serial.c</file>
-      <file>$PROJ_DIR$\timer.c</file>
-      <file>$PROJ_DIR$\main.c</file>
-      <file>$PROJ_DIR$\nvic.c</file>
       <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-      <file>$PROJ_DIR$\timer.h</file>
       <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
       <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
       <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-      <file>$PROJ_DIR$\serial.h</file>
-      <file>$PROJ_DIR$\LPC17xx_gpio.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-      <file>$PROJ_DIR$\leds.h</file>
       <file>$TOOLKIT_DIR$\inc\c\assert.h</file>
       <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
       <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
       <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\serial.c</file>
+      <file>$PROJ_DIR$\timer.c</file>
+      <file>$PROJ_DIR$\main.c</file>
+      <file>$PROJ_DIR$\nvic.c</file>
+      <file>$PROJ_DIR$\timer.h</file>
+      <file>$PROJ_DIR$\serial.h</file>
+      <file>$PROJ_DIR$\LPC17xx_gpio.h</file>
+      <file>$PROJ_DIR$\leds.h</file>
       <file>$PROJ_DIR$\nvic.h</file>
       <file>$PROJ_DIR$\Debug SRAM\Obj\low_level_init.pbi</file>
       <file>$PROJ_DIR$\Debug SRAM\Obj\serial.o</file>
@@ -125,11 +76,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 8 2 7 6 10 4 5 3 9</file>
+          <file> 8 3 7 6 10 5 4 2 9</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 8 2 7 6 10 4 11 5 3 9</file>
+          <file> 8 3 7 6 10 5 11 4 2 9</file>
         </tool>
       </inputs>
     </file>
@@ -166,11 +117,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 21 8 2</file>
+          <file> 26 8 3</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 21 8 2</file>
+          <file> 26 8 3</file>
         </tool>
       </inputs>
     </file>
@@ -189,11 +140,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 28 6 26 10 4 5 3 9 23 27 8 2 25 7 17 24 29 22</file>
+          <file> 20 6 18 10 5 4 2 9 16 19 8 3 17 7 25 28 29 27</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 28 6 26 10 4 11 5 3 9 23 27 8 2 25 7 17 24 29 22</file>
+          <file> 20 6 18 10 5 11 4 2 9 16 19 8 3 17 7 25 28 29 27</file>
         </tool>
       </inputs>
     </file>
@@ -212,11 +163,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 24 22 7 6 10 4 5 3 9 17 21</file>
+          <file> 28 27 7 6 10 5 4 2 9 25 26</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 24 22 7 6 10 4 11 5 3 9 17 21</file>
+          <file> 28 27 7 6 10 5 11 4 2 9 25 26</file>
         </tool>
       </inputs>
     </file>
@@ -235,11 +186,11 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 28 6 26 10 4 5 3 9 23 27 8 2 25 7 29</file>
+          <file> 20 6 18 10 5 4 2 9 16 19 8 3 17 7 29</file>
         </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 28 6 26 10 4 11 5 3 9 23 27 8 2 25 7 29</file>
+          <file> 20 6 18 10 5 11 4 2 9 16 19 8 3 17 7 29</file>
         </tool>
       </inputs>
     </file>
@@ -257,7 +208,7 @@
       <inputs>
         <tool>
           <name>ILINK</name>
-          <file> 41 33 34 40 43 31 39 16 19 18 20</file>
+          <file> 41 33 34 40 43 31 39 12 14 13 15</file>
         </tool>
       </inputs>
     </file>
