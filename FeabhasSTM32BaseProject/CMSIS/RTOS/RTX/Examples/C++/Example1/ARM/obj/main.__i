@@ -1,0 +1,1 @@
+--cpp -c --cpu Cortex-M3 -D__RTX -D__EVAL --li -g -O0 --apcs=interwork -I..\..\..\..\INC --exceptions -I C:\Keil\ARM\RV31\Inc -I C:\Keil\ARM\CMSIS\Include -o ".\obj\main.o" --omf_browse ".\obj\main.crf" --depend ".\obj\main.d" "..\main.cpp"

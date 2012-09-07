@@ -1,0 +1,25 @@
+*** Creating Trace Output File '.\obj\Example1.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\obj\startup_armcm3.o"'
+### List of Objects: adding '".\obj\system_armcm3.o"'
+### List of Objects: adding '".\obj\rtx_conf_cm.o"'
+### List of Objects: adding '"..\..\..\..\LIB\ARM\RTX_CM3.lib"'
+### List of Objects: adding '".\obj\retarget.o"'
+### List of Objects: adding '".\obj\serial.o"'
+### List of Objects: adding '".\obj\main.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 ".\obj\startup_armcm3.o" ".\obj\system_armcm3.o" ".\obj\rtx_conf_cm.o" C:\Users\niall.cooling\Documents\CMSIS-RTOS\RTX\LIB\ARM\RTX_CM3.lib ".\obj\retarget.o" ".\obj\serial.o" ".\obj\main.o" C:\Keil\ARM\RV31\Lib\RTX_CM3.LIB --strict --scatter ".\obj\Example1.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\lst\Example1.map" -o ".\obj\Example1.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\obj\Example1.axf'
+### ADS-LD Command File: '.\obj\Example1.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\obj\Example1.lnp', Handle=0x00000430
+### Writing '.lnp' file
+### ADS-LD Command file '.\obj\Example1.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 1 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -14,7 +14,7 @@
 ### ADS-LD Output File: 'LPC1764_Base_Project.axf'
 ### ADS-LD Command File: 'LPC1764_Base_Project.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile 'LPC1764_Base_Project.lnp', Handle=0x00000D14
+### Creating CmdFile 'LPC1764_Base_Project.lnp', Handle=0x000001E0
 ### Writing '.lnp' file
 ### ADS-LD Command file 'LPC1764_Base_Project.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.

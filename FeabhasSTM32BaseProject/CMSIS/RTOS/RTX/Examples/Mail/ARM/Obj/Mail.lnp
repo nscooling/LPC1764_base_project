@@ -1,0 +1,4 @@
+--cpu Cortex-M3 ".\obj\startup_armcm3.o" ".\obj\system_armcm3.o" ".\obj\rtx_conf_cm.o" C:\Keil\ARM\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib ".\obj\serial.o" ".\obj\retarget.o" ".\obj\mail.o" C:\Keil\ARM\RV31\Lib\RTX_CM3.LIB --library_type=microlib --strict --scatter ".\Obj\Mail.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\Lst\Mail.map" -o ".\Obj\Mail.axf"

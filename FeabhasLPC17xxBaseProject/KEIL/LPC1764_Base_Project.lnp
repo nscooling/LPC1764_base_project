@@ -1,0 +1,4 @@
+--cpu Cortex-M3 "main.o" "serial.o" "system_lpc17xx.o" ".\startup_lpc17xx.o" "timer.o" --strict --scatter "LPC1764_Base_Project.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\LPC1764_Base_Project.map" -o "LPC1764_Base_Project.axf"

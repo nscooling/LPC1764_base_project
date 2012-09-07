@@ -408,6 +408,11 @@
               <FileType>2</FileType>
               <FilePath>..\LPC17xx\Source\ARM\startup_LPC17xx.s</FilePath>
             </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\timer.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

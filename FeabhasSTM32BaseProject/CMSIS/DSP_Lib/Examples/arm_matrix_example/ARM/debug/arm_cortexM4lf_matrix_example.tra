@@ -1,0 +1,22 @@
+*** Creating Trace Output File '.\debug\arm_cortexM4lf_matrix_example.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '".\debug\arm_matrix_example_f32.o"'
+### List of Objects: adding '".\debug\math_helper.o"'
+### List of Objects: adding '".\debug\startup_armcm4.o"'
+### List of Objects: adding '".\debug\system_armcm4.o"'
+### List of Objects: adding '"..\..\..\..\Lib\ARM\arm_cortexM4lf_math.lib"'
+### ADS-LD Command completed:
+--cpu Cortex-M4.fp ".\debug\arm_matrix_example_f32.o" ".\debug\math_helper.o" ".\debug\startup_armcm4.o" ".\debug\system_armcm4.o" C:\Keil\ARM\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\debug\arm_cortexM4lf_matrix_example.map" -o ".\debug\arm_cortexM4lf_matrix_example.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '.\debug\arm_cortexM4lf_matrix_example.axf'
+### ADS-LD Command File: '.\debug\arm_cortexM4lf_matrix_example.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '.\debug\arm_cortexM4lf_matrix_example.lnp', Handle=0x00000388
+### Writing '.lnp' file
+### ADS-LD Command file '.\debug\arm_cortexM4lf_matrix_example.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
